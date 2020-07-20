@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
 
 word.scan/[aeiou]{2}/
-  end
+  
 
 end
 
