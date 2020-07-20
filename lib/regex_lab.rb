@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
 if /W[aeiou]rd/.match("Word")
   true
-elsif /\A[^aeiou]/.match("Word")
+elsif /\A(?=[^aeiou])(?=[a-z])/i.match("Word")
   false
 end
 end
