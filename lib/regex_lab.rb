@@ -1,8 +1,8 @@
 def starts_with_a_vowel?(word)
-if /W[aeiou]rd/.match("Word")
-  true
-elsif /\A(?=[^aeiou])(?=[a-z])/i.match("Word")
-  false
+  if word.match(/\A[aeiou]/i) == nil
+      return false
+    else
+      return true
 end
 end
 
